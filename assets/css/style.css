@@ -1,17 +1,36 @@
+#applyCSS * {
+  background-image: url("/assets/images/photo-1461749280684-dccba630e2f6.avif");
+  background-repeat: repeat-y;
+  background-size: cover; /* or 100% 100% to stretch over the full area */
+  background-attachment: fixed;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
   color: #333;
+  min-height: 100vh;
+
+  background-image: url("");
+  background-repeat: repeat-y;
+  background-size: cover; /* or 100% 100% to stretch over the full area */
+  background-attachment: fixed;
+}
+@media (max-width: 768px) {
+  body {
+    background-image: url("/path/to/your/alternative-image.png");
+  }
 }
 
 header {
   background: #586e79;
   color: #fff;
-  padding: 10px 0;
+  padding: 20px 0;
   text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header nav ul {
@@ -27,33 +46,46 @@ header nav ul li {
 header nav ul li a {
   color: #fff;
   text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+  background-color: #4a5a64;
 }
 
 section {
+  margin: 20px auto;
   padding: 0px;
-  margin: 0px 0;
+
+  max-width: 800px; /* Optional: for better readability on wide screens */
 }
 
 footer {
   text-align: center;
   padding: 20px 0;
-  background: #333;
+  background: #586e79;
   color: #fff;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #profile img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #586e79;
 }
 
 #profile h2 {
-  margin: 0; /* Removes default margin */
+  margin: 2; /* Removes default margin */
 }
 
 nav ul {
   list-style-type: none; /* Removes bullet points */
-  padding: 0; /* Removes default padding */
+  padding: 0px; /* Removes default padding */
   margin: 0; /* Removes default margin */
   display: flex; /* Aligns items in a row */
   justify-content: center; /* Centers items horizontally */
@@ -64,6 +96,13 @@ nav ul li {
 }
 
 .social_button img {
-  max-width: 50px;
+  align-self: flex-start;
+  width: 20px;
   height: auto;
+  display: inline;
+  padding-right: 10px;
+}
+
+.social_button img:hover {
+  opacity: 0.7;
 }
