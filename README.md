@@ -1,4 +1,4 @@
-# Robbevanherpe's Personal Website Repository
+# Robbe Van Herpe's Personal Website Repository
 
 ## Overview
 
