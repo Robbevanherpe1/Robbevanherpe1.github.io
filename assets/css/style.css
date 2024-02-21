@@ -37,7 +37,7 @@ section {
 footer {
   text-align: center;
   padding: 20px 0;
-  background: #333;
+  background: #586e79;
   color: #fff;
 }
 
@@ -48,12 +48,12 @@ footer {
 }
 
 #profile h2 {
-  margin: 0; /* Removes default margin */
+  margin: 2; /* Removes default margin */
 }
 
 nav ul {
   list-style-type: none; /* Removes bullet points */
-  padding: 0; /* Removes default padding */
+  padding: 0px; /* Removes default padding */
   margin: 0; /* Removes default margin */
   display: flex; /* Aligns items in a row */
   justify-content: center; /* Centers items horizontally */
@@ -64,6 +64,9 @@ nav ul li {
 }
 
 .social_button img {
-  max-width: 50px;
+  align-self: flex-start;
+  width: 20px;
   height: auto;
+  display: inline;
+  padding-right: 10px;
 }
