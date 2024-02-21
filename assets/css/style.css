@@ -1,3 +1,10 @@
+#applyCSS * {
+  background-image: url("/assets/images/photo-1461749280684-dccba630e2f6.avif");
+  background-repeat: repeat-y;
+  background-size: cover; /* or 100% 100% to stretch over the full area */
+  background-attachment: fixed;
+}
+
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
@@ -6,6 +13,16 @@ body {
   background-color: #f4f4f4;
   color: #333;
   min-height: 100vh;
+
+  background-image: url("");
+  background-repeat: repeat-y;
+  background-size: cover; /* or 100% 100% to stretch over the full area */
+  background-attachment: fixed;
+}
+@media (max-width: 768px) {
+  body {
+    background-image: url("/path/to/your/alternative-image.png");
+  }
 }
 
 header {
