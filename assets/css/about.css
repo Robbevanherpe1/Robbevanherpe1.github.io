@@ -70,9 +70,10 @@ footer {
   color: white;
   text-align: center;
   padding: 10px 0;
-  position: relative;
+  position: fixed;
   bottom: 0;
   width: 100%;
+  left: 0;
 }
 
 @media (max-width: 768px) {
