@@ -126,13 +126,33 @@ nav ul li {
   /* Add more styling as needed */
 }
 
-.container {
+.container_1 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 0;
+}
+.container_1 section {
+  padding: 10px;
+  box-sizing: border-box;
+}
+.container_2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0;
+}
+.container_2 section {
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.container_3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
 }
 
-.container section {
+.container_3 section {
   border: 1px solid #ccc;
   padding: 10px;
   box-sizing: border-box;
