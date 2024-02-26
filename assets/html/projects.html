@@ -4,6 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects_Robbe</title>
+    <link rel="stylesheet" href="/assets/css/projects.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>My Coding Projects</h1>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/assets/html/about.html">About Me</a></li>
+          <li><a href="/assets/html/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="project">
+        <h2>Project for bachelor in AI & Data Engineering</h2>
+        <p>Scraping data from sites, cleaning and analizing data</p>
+        <section class="boxes">
+          <button
+            class="button"
+            onclick="openInNewTab('https://github.com/Robbevanherpe1/DEP1-2023-2024-groep30')"
+          >
+            View Project
+          </button>
+          <img
+            id="project1"
+            src="/assets/images/project1.png"
+            alt="Project foto"
+          />
+        </section>
+      </section>
+
+      <section class="project">
+        <h2>Project Title 2</h2>
+        <p>Project description...</p>
+        <button
+          class="button"
+          onclick="openInNewTab('https://github.com/Robbevanherpe1/DEP1-2023-2024-groep30')"
+        >
+          View Project
+        </button>
+      </section>
+
+      <!-- Add more projects here -->
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Robbe Van Herpe</p>
+    </footer>
+    <script src="/assets/js/index.js"></script>
+  </body>
 </html>

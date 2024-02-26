@@ -58,7 +58,6 @@ header nav ul li a:hover {
 section {
   margin: 20px auto;
   padding: 0px;
-
   max-width: 800px; /* Optional: for better readability on wide screens */
 }
 
@@ -105,4 +104,50 @@ nav ul li {
 
 .social_button img:hover {
   opacity: 0.7;
+}
+
+#timeline-wrapper {
+  background-image: url("/assets/images/python-hero.jpg");
+  height: 20px;
+  width: auto; /* Adjust to the size of your image */
+  background-size: auto;
+}
+
+.timeline-event {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  cursor: pointer;
+  /* Add more styling as needed */
+}
+
+.main_box {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 0;
+}
+
+.main_box div {
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+#quote {
+  grid-column-start: 3;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  place-self: center;
+}
+
+#test1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
